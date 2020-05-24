@@ -58,7 +58,7 @@ handleChange=event=>{
         <div className='buttons'>
         <CustomButton 
         type='submit'>Sign in</CustomButton>
-        <CustomButton 
+        <CustomButton  type="button"
         onClick={signInWithGoogle}  isGoogleSignIn >
         {' '} Sign in with Google {' '}
         </CustomButton>
