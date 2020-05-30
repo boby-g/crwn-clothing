@@ -5,7 +5,6 @@ import {connect} from 'react-redux';
 import {ReactComponent as Logo} from '../../assets/crown.svg'
 import {auth} from '../../firebase/firebase.utils'
 import CartIcon from '../cart-icon/cart-icon.component'
-import CardDropdown from '../../components/cart-dropdown/cart-dropdown.component'
 
 import './header.styles.scss';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
@@ -37,7 +36,7 @@ const Header=({currentUser,hidden})=>(
    <CartIcon/>
 </div>
 {
-    hidden ? null:<CartDropdown/>
+    hidden ? null : <CartDropdown/>
 }
 
 </div>
